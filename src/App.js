@@ -26,6 +26,7 @@ class App extends Component {
   }
   amend=function(event){
       var aa=event.target.parentElement.firstElementChild.innerHTML
+
       this.setState({
         id:aa
       })
@@ -66,6 +67,7 @@ class App extends Component {
         $('.wrap_news').css({
             'display':"block"
         })
+
          $.ajax({
             type:"post",
             url:"http://localhost:8200/exam/test3",
@@ -97,6 +99,7 @@ class App extends Component {
                              </div>
                           </Link>
                           <div className="btn">
+                              <span>{v.id}</span>
                               <button className="amend" id="amend" onClick={this.amend}>修改</button>
                               <button className="remove"  id="remove" onClick={this.remove}>删除</button>
                           </div>

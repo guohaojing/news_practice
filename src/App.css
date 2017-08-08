@@ -38,6 +38,9 @@ a{
 	line-height:30px;
 	margin:0 auto;
 }
+.btn span{
+	display:none;
+}
 /* 弹框 */
 .alert{
 	display:none;
